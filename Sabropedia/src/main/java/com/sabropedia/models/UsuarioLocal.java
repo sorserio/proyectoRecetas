@@ -9,6 +9,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
@@ -43,7 +44,7 @@ public class UsuarioLocal {
 	@Transient
 	private String confirmarContraseña;
 	
-	@OneToMany(mappedBy = "creador")
+	@OneToOne(mappedBy = "creador")
 	private List<Local> local;
 	
 	@OneToMany(mappedBy = "creador")
