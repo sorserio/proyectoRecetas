@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleRC.css">
+    <title>Sabropedia</title>
+</head>
+
+<body>
+    
+<header>
+    <div class="headerSection">
+        <div id="sectionHeader">
+            <img id="logo" class="logo" src="./img/logo.png" alt="logo">
+
+            <div class="search-container">
+                <h2>¡Gracias por querer ser parte de Sabropedia!</h2>
+            </div>
+
+        <div class="loginSection">
+            <a href="#" id="login">¿Necesitas ayuda ?</a>
+
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="FormularioP">
+
+            <h2 class="registerP">Ingresa datos comerciales aqui:</h2>
+            
+            <form action="/register-empresa" method="post">
+                <label for="nombreRepresentante">Nombre del Representante:</label><br>
+                <input type="text" id="nombreRepresentante" name="nombreRepresentante" required><br><br>
+        
+                <label for="rutRepresentante">RUT del Representante:</label><br>
+                <input type="text" id="rutRepresentante" name="rutRepresentante" required><br><br>
+        
+                <label for="nombreEmpresa">Nombre de la Empresa:</label><br>
+                <input type="text" id="nombreEmpresa" name="nombreEmpresa" required><br><br>
+        
+                <label for="rutEmpresa">RUT de la Empresa:</label><br>
+                <input type="text" id="rutEmpresa" name="rutEmpresa" required><br><br>
+        
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+        
+                <label for="confirmarCorreo">Confirmar Correo:</label><br>
+                <input type="email" id="confirmarCorreo" name="confirmarCorreo" required><br><br>
+        
+                <label for="contraseña">Contraseña:</label><br>
+                <input type="password" id="contraseña" name="contraseña" required><br><br>
+        
+                <label for="confirmarContraseña">Confirmar Contraseña:</label><br>
+                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required><br><br>
+        
+                <button type="submit">Registrarse</button>
+            </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Sabropedia. Todos los derechos reservados.</p>
+        <p><a href="mailto:admin@sabropedia.com">Contacto con los administradores</a></p>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p><a href="/politicas" class="politicas">Consulta nuestras políticas de privacidad y datos del usuario</a></p>
+    </div>
+</footer>
+
+<script src="js/register.js"></script>
+</body>
+
+</html>

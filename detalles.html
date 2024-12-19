@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleDE.css">
+    <title>Sabropedia</title>
+</head>
+
+<body>
+    <!-- Header section: Logo, title, and login/cart -->
+    <header>
+        <div class="headerSection">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <div class="nav-buttons">
+                <ul>
+                    <li> <a href="index.html"><h5>INICIO</h5></a></li>
+                    <li> <a href="heladerias.html"><h5>RESTAURANTES</h5></a></li>
+                    <li> <a href="heladerias.html"><h5>HELADERÍAS</h5></a></li>
+                    <li> <a href="heladerias.html"><h5>CAFETERÍAS</h5></a></li>
+                    <li> <a href="heladerias.html"><h5>FOOD TRUCKS</h5></a></li>
+                </ul>
+            </div>
+            <div class="loginSection">
+                <a href="/login.html" id="login">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+        </div>
+    </header>
+
+    <!-- Main body section: Contains left and right parts -->
+
+    <main class="card-section">
+
+   <!-- Contenedor de los detalles del local -->
+   <section class="local-details">
+    <div class="card">
+                <!-- Información básica del local -->
+
+        <img class="local-img" src="./img/comida-mexicana.jpg" alt="Comida Mexicana">
+
+        <div class="brand-mark">
+            <div class="branding">
+                <img src="./img/logo-restorant.png" alt="Logo del Restaurante" class="restaurant-logo">
+                <div class="name-mark">
+                <h3>Los Pollsmanos</h3>
+                    <span class="mark"><i class="fa fa-star"></i> 3.9</span>
+                </div>
+                <span class="cat">RESTAURANTE</span>
+            </div>
+        </div>
+
+        <!-- Detalles del local -->
+        <div class="local-info">
+            <div class="description">
+                <h4>Quienes somos</h4>
+                <p>Un prestigioso Restaurant de la ciudad de Concepción</p>
+            </div>
+
+            <div class="address">
+                <h4>Dirección:</h4>
+                <p>Calle Ficticia 123, Ciudad XYZ</p>
+            </div>
+
+            <div class="phone">
+                <h4>Teléfono:</h4>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <div class="image-gallery">
+            <h4>Galería de imágenes:</h4>
+            <div class="gallery">
+                <img src="./img/comida-mexicana.jpg" alt="Imagen 1" class="gallery-img">
+                <img src="./img/comida-mexicana.jpg" alt="Imagen 2" class="gallery-img">
+                <img src="./img/comida-mexicana.jpg" alt="Imagen 3" class="gallery-img">
+                
+            </div>
+        </div>
+
+        <!-- Formulario para agregar reseña (ubicado aquí) -->
+        <div class="add-review">
+            <h4>Deja tu reseña:</h4>
+            <form action="guardar_resena.php" method="POST">
+                <textarea name="resena" placeholder="Escribe tu reseña aquí..." required></textarea>
+                <div class="rating">
+                    <label>Valoración:</label>
+                    <select name="rating" required>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-review">Enviar Reseña</button>
+            </form>
+        </div>
+
+        <!-- Reseñas -->
+        <div class="reviews">
+            <h4>Reseñas de los usuarios:</h4>
+            
+            <!-- Reseñas existentes -->
+            <div class="review">
+                <p><strong>Juan Pérez</strong> (5 estrellas): "Excelente comida, el servicio fue muy rápido y la atmósfera es genial."</p>
+            </div>
+            <div class="review">
+                <p><strong>Maria García</strong> (4 estrellas): "Muy buena comida, pero el lugar estaba algo lleno, lo que hizo que el servicio fuera un poco lento."</p>
+            </div>
+            <!-- Aquí se agregan más reseñas de los usuarios -->
+        
+        </div> <!-- card -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- JavaScript file to handle interactions -->
+    <script src="./main.js"></script>
+</body>
+
+
+</html>

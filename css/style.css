@@ -1,0 +1,258 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Header */
+#login {
+    display: flex;
+    align-items: flex-end;
+    background-color: #ffffff;
+    color: #CF362C;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+}
+
+.headerSection {
+    background-color: #CF362C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    width: 220px;
+    height: 120px;
+}
+
+/* Estilo del contenedor */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 500px;
+}
+
+/* Estilo del input */
+.search-input {
+    justify-content: space-around;
+    flex: 1;
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+.search-button {
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0098b3;
+}
+
+/* Body */
+body {
+    background-color: #FF5449;
+}
+
+.bodyCards {
+    background-color: #FF5449;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+}
+
+/* Estilos para las tarjetas con información */
+.local-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.slogan {
+    display: flex;
+    color: #ffff;
+    padding: 30px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: Rubik;
+    flex-wrap: wrap;
+    width: 30%;
+    background-color: #FF5449;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-buttons ul{
+    display: flex; /* Alinea los botones en horizontal */
+    background-color: #FF5449;
+    padding: 10px;
+    font-weight: 500;
+    justify-content: space-around;
+    gap: 20px; /* Espaciado entre los botones */
+}
+
+.nav-buttons ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Mantiene los elementos en línea horizontal */
+}
+
+.nav-buttons ul li {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #FF5449;
+}
+
+.nav-buttons ul li a {
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5449;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons ul li a:hover {
+    background-color: #ffffff;
+    color: #3C3C43;
+}
+
+
+/* Estilo general para las tarjetas */
+.card {
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+    width: 30rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: #FFFFFF;
+}
+
+.branding h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    color: #333;
+    font-weight: bold;
+}
+
+.branding img {
+    display: flex;
+    border: 1px solid #4747479a;
+    border-radius: 30%;
+    height: 60px;
+    width: 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    flex: 1;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: #f39c12;
+    white-space: nowrap;
+}
+
+.mark i {
+    margin-right: 5px;
+}
+
+.brand-mark {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
