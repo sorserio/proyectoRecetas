@@ -256,3 +256,8 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+.card-link {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto actual */
+}
