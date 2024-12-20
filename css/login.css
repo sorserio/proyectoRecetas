@@ -1,0 +1,188 @@
+/* General */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/food-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #FF5449;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a62921;
+    height: 95px;
+    width: 100%;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+#login {
+    display: flex;
+    align-items: flex-end;
+    background-color: #ffffff;
+    color: #CF362C;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.p-form {
+    background: #CF362C;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #CF362C;
+}
+
+.loginMsg {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.login-box label {
+    display: flex;
+    text-align: left;
+    padding: 0.7rem;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    background-color: #FF5449;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+    background-color: #a62921;
+}
+
+.sign-up {
+    margin-top: 20px;
+}
+
+.sign-up p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.reset {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    color: #fff;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .p-form {
+        padding: 20px;
+    }
+
+    .loginMsg {
+        font-size: 1.5rem;
+    }
+
+    .login-box button {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-form {
+        padding: 15px;
+    }
+
+    .loginMsg {
+        font-size: 1.2rem;
+    }
+
+    .login-box input {
+        padding: 8px;
+    }
+
+    .login-box button {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}

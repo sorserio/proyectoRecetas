@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Evento para el botón "Regístrate como Comercial"
     registroComercialBtn.addEventListener('click', function() {
-        window.location.href = 'RegisterComercial.html';  // Redirige a la página de registro comercial
+        window.location.href = 'RegistroComercial.html';  // Redirige a la página de registro comercial
     });
 });

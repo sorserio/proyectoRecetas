@@ -1,87 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Inicio de Sesión</title>
+</head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-            rel="stylesheet">
+<body>
+    <header>
+        <div class="headerSection">
+            <a href="/index.html">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </a>
+        </div>
+    </header>
 
-        <link rel="stylesheet" href="css/styleLO.css">
-        <title>Inicio de Sesión</title>
-    </head>
-
-    <body>
-
-        <header>
-            <div class="headerSection">
-                <a href="/index.html">
-                    <img class="logo" src="./img/logo.png" alt="logo">
-                </a>
+    <main>
+        <section class="p-form">
+            <div class="login-box">
+                <h2 class="loginMsg">Hola de nuevo, te estuvimos esperando!</h2>
+                <form action="/login" method="post">
+                    <label for="correo">Email:</label>
+                    <input type="email" placeholder="Ingresa tu Email" id="correo" name="correo" required>
+                    
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" id="contraseña" name="contraseña" required>
+                    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                
+                <div class="sign-up">
+                    <p>
+                        <a href="recuperar_contraseña.html" class="reset">¿Olvidaste tu contraseña?</a>
+                        <br><br>
+                        Únete y forma parte de la comunidad con el mejor sazón.
+                    </p>
+                    <button id="registroPersona">
+                        <i class="fa-solid fa-user"></i> Regístrate como Persona
+                    </button>
+                    <button id="registroComercial">
+                        <i class="fa-solid fa-shop"></i> Regístrate como Comercial
+                    </button>
+                </div>
             </div>
+        </section>
+    </main>
 
-        </header>
+    <footer class="footer">
+        <p>
+            <i class="fa-regular fa-copyright"></i> 2024 TODOS LOS DERECHOS RESERVADOS.
+        </p>
+    </footer>
 
-        <main>
-            <section class="p-form">
-
-                <div class="login-box">
-                    <h2 class="loginMsg">Hola de nuevo, te estuvimos
-                        esperando!</h2>
-
-                    <form action="/login" method="post">
-                        <label for="correo">Email:</label><br>
-                        <input type="email" placeholder="Ingresa tu Email"
-                            id="correo" name="correo" required><br><br>
-
-                        <label for="contraseña">Contraseña:</label><br>
-                        <input type="password"
-                            placeholder="Ingresa tu contraseña" id="contraseña"
-                            name="contraseña" required><br><br>
-
-                        <button type="submit">Iniciar Sesión</button>
-                    </form>
-
-                    <div class="sign-up">
-                        <p>
-                            <a href="recuperar_contraseña.html"
-                                class="reset">¿Olvidaste tu contraseña?</a>
-                            <br><br>
-                            Únete y forma parte de la comunidad con el mejor
-                            sazón.
-                        </p>
-
-                        <button id="registroPersona"><i
-                                class="fa-solid fa-user"></i>Regístrate como
-                            Persona</button>
-
-                        <button id="registroComercial"><i
-                                class="fa-solid fa-shop"></i>Regístrate como
-                            Comercial</button>
-                    </div>
-
-                </aside>
-
-            </section>
-        </main>
-
-        <footer class="footer">
-            <i class="fa-regular fa-copyright"></i>
-            <p>2024 TODOS LOS DERECHOS RESERVADOS.</p>
-        </footer>
-
-        <script src="js/login.js"></script>
-
-    </body>
+    <script src="js/login.js"></script>
+</body>
 
 </html>
